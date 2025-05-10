@@ -1,4 +1,5 @@
 import math
+import datetime
 
 print("Tire Volume Calculator")
 print("----------------------")
@@ -14,3 +15,9 @@ volume = (math.pi * width**2 * aspect_ratio * (width * aspect_ratio + 2540 * dia
 # Display result
 print()
 print("The approximate volume is", round(volume, 2), "liters")
+
+# Get current date
+current_date = datetime.date.today()
+
+with open("volumes.txt", "a") as file:
+    file.write(f"{current_date} {width} {aspect_ratio} {diameter} {round(volume, 2)}")
