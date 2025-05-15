@@ -1,3 +1,5 @@
+# Exceeded requirements by adding prices for more tire sizes from user input using conditionals.
+
 import math
 import datetime
 
@@ -20,4 +22,19 @@ print("The approximate volume is", round(volume, 2), "liters")
 current_date = datetime.date.today()
 
 with open("volumes.txt", "a") as file:
-    file.write(f"{current_date} {width} {aspect_ratio} {diameter} {round(volume, 2)}")
+    file.write(f"{current_date} {width} {aspect_ratio} {diameter} {round(volume, 2)}\n")
+
+# Tire prices
+tire_prices = {
+    (205, 60, 15): 75.99,
+    (215, 60, 16): 85.99,
+    (225, 65, 17): 95.50,
+    (235, 55, 18): 105.99,
+}
+
+# Price from user input
+if (width, aspect_ratio, diameter) in tire_prices:
+    price = tire_prices[(width, aspect_ratio, diameter)]
+    print(f"\nThe price is ${price:.2f}.")
+else:
+    print("\nSorry, no price available.")
