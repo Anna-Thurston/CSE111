@@ -32,7 +32,7 @@ def main():
     print("Inkom Emporium")
 
     try:
-        with open(REQUEST_FILENAME, "r") as request_file:
+        with open(REQUEST_FILENAME, "rt") as request_file:
             reader = csv.reader(request_file)
             next(reader)
 
