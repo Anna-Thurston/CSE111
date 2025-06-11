@@ -1,0 +1,80 @@
+CSE 111 Proposal for a Student Chosen Program
+
+    (This is a proposal. All proposals are written with our best
+    knowledge at the beginning of a project. As we progress from the
+    beginning to the end of a project, we gain more knowledge, and we
+    change some of our proposed ideas. This is part of completing any
+    project and is fine.  However, we still must write a proposal so
+    that our teachers or supervisors know what we intend to do. Please
+    answer each of the following questions to the best of your
+    knowledge.)
+
+1. What is the title of your program?
+Small Business Tax Bookkeeping Assistant
+
+2. What real-world problem will your program address or help to solve?
+I recently completed a Basic Accounting certificate through Pathway 
+Worldwide and run a small Music Lessons business from my home. Many 
+small business owners and freelancers, like myself, struggle to keep 
+track of income, expenses, and taxable deductions throughout the year. 
+This often results in stress and disorganization when it comes time to 
+file taxes. My program will help users track their financial transactions, 
+categorize income and expenses, calculate totals by category, and estimate 
+quarterly or end-of-year tax liability. It will also generate simple 
+summary reports that can be exported or reviewed at tax time.
+
+3. What will you learn from developing this program?
+I will improve my ability to structure and write modular programs in Python 
+using real-world data. I’ll also practice reading and writing CSV files, 
+performing calculations with dates and financial data, using dictionaries 
+and lists effectively, and writing unit tests with pytest. Additionally, 
+I’ll deepen my understanding of how accounting principles and tax calculations 
+can be translated into code.
+
+4. What Python modules will your program use?
+
+    (Some examples are: csv, datetime, functools, matplotlib, math,
+    pandas, pytest, random, requests, and tkinter.)
+
+csv (to read and write transaction files)
+
+datetime (to parse and organize transactions by date)
+
+decimal (to accurately handle money values)
+
+pytest (to test core logic functions)
+
+os (to manage file paths and outputs)
+
+5. List the names of functions you will need?
+
+    (Remember that the most reusable functions don't get user input and
+    don't print results but instead have parameters and return a result.
+    Functions that get user input and print results are important and do
+    useful work but are not easily reusable.)
+
+    (Remember also that it's hard to test functions that get user input
+    and print results. It's easy to test functions that don't get user
+    input and don't print results but instead have parameters and return
+    a result. Therefore, you should write most of your program functions
+    to have parameters and return a result.)
+
+read_transactions(filename)
+
+categorize_transaction(description)
+
+summarize_expenses(transactions)
+
+summarize_income(transactions)
+
+estimate_tax_liability(income_total, expense_total)
+
+write_summary_report(summary_data, output_filename)
+
+main()
+
+6. List the names of the test functions you will write.
+
+test_estimate_tax_liability()
+
+test_summarize_expenses()
